@@ -1,0 +1,19 @@
+[project]
+name = "ai-agent"
+version = "0.1.0"
+description = "Custom AI Agent"
+readme = "README.md"
+authors = [
+    { name = "Porter", email = "crporter171@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=3.20.0",
+]
+
+[project.scripts]
+ai-agent = "ai_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
