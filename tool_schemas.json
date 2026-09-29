@@ -2,6 +2,23 @@
 {
     "type": "function",
     "function": {
+        "name": "list_files",
+        "description": "Lists the files in a directory.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "path": {
+                    "type": "string",
+                    "description": "The path to the directory to list."
+                }
+            },
+            "required": ["path"]
+        }
+    }
+},
+{
+    "type": "function",
+    "function": {
         "name": "read_file",
         "description": "Reads the content of a file given its path.",
         "parameters": {
@@ -13,6 +30,44 @@
                 }
             },
             "required": ["path"]
+        }
+    }
+},
+{
+    "type": "function",
+    "function": {
+        "name": "run_command",
+        "description": "Runs a shell command on the local system. The user approves it first.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "command": {
+                    "type": "string",
+                    "description": "The shell command to run."
+                }
+            },
+            "required": ["command"]
+        }
+    }
+},
+{
+    "type": "function",
+    "function": {
+        "name": "write_file",
+        "description": "Creates or overwrites content to a file at the given path.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "path": {
+                    "type": "string",
+                    "description": "The path to the file to be written."
+                },
+                "content": {
+                    "type": "string",
+                    "description": "The content to write to the file."
+                }
+            },
+            "required": ["path", "content"]
         }
     }
 }
