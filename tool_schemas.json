@@ -1,0 +1,19 @@
+[
+{
+    "type": "function",
+    "function": {
+        "name": "read_file",
+        "description": "Reads the content of a file given its path.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "path": {
+                    "type": "string",
+                    "description": "The path to the file to be read."
+                }
+            },
+            "required": ["path"]
+        }
+    }
+}
+]
