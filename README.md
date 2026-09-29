@@ -57,7 +57,6 @@ with OpenAI(base_url="http://localhost:8080/v1", api_key="local") as client:
 ├── tools.py         # Tool implementations and execution router
 ├── tool_schemas.json # OpenAI-compatible function schemas for the LLM
 ├── pyproject.toml   # Project metadata and dependencies
-├── snake_game/      # Example/sandbox directory
 └── README.md        # This file
 ```
 
